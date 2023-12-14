@@ -11,7 +11,8 @@ Material:
   m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - UNDERLAY_ON
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -118,11 +119,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: Cooking SDF
+  m_Name: Cooking SDF_shadows
   m_EditorClassIdentifier: 
-  hashCode: -1888245895
+  hashCode: 1881744467
   material: {fileID: -1028649647747386039}
-  materialHashCode: -344908487
+  materialHashCode: 1018608531
   m_Version: 1.1.0
   m_SourceFontFileGUID: 16c52ad1147bbbd43a0e05d28e82f26a
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 16c52ad1147bbbd43a0e05d28e82f26a, type: 3}

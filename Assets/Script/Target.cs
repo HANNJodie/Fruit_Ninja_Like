@@ -20,14 +20,18 @@ public class Target : MonoBehaviour
 
     public GameController gameController;
 
-    public int scoreItem;
+    public int scoreItemEasy;
+    //public int scoreItemMedium;
+    //public int scoreItemHard;
+    //public Difficulty_controller _difficulty_Controller;
+   
 
     // Start is called before the first frame update
     void Start()
     {
         Invoke("DestroyTime", LifeTime);
 
-        Debug.Log("Wouf");
+        // Debug.Log("Wouf");
 
         // Recuperrer auto le rigidbody
         targetRb = GetComponent<Rigidbody>();
@@ -42,6 +46,7 @@ public class Target : MonoBehaviour
         transform.position = RandomSpawn();
 
         gameController = GameObject.Find("GameManager").GetComponent<GameController>();
+
     }
 
     // Update is called once per frame
@@ -74,7 +79,14 @@ public class Target : MonoBehaviour
 
        if (Input.GetMouseButton(0))
         {
-            gameController.UpdateScore(scoreItem);
+            //if (_difficulty_Controller.DificulyValue == 1)
+            //    gameController.UpdateScore(scoreItemEasy);
+            //if (_difficulty_Controller.DificulyValue == 2)
+            //    gameController.UpdateScore(scoreItemMedium);
+            //if (_difficulty_Controller.DificulyValue == 3)
+            //    gameController.UpdateScore(scoreItemHard);
+
+            gameController.UpdateScore(scoreItemEasy);
             Instantiate(destroyParticle, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }

@@ -151,4 +151,6 @@ MonoBehaviour:
   maxTorque: 10
   destroyParticle: {fileID: 3371569193385938658, guid: 745208c9d6e104225bd99e1ab894e3bb, type: 3}
   gameController: {fileID: 0}
-  scoreItem: 2
+  scoreItemEasy: 3
+  scoreItemMedium: 2
+  scoreItemHard: 2
