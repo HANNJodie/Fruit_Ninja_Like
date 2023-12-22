@@ -24,7 +24,7 @@ public class Target : MonoBehaviour
     //public int scoreItemMedium;
     //public int scoreItemHard;
     //public Difficulty_controller _difficulty_Controller;
-   
+
 
     // Start is called before the first frame update
     void Start()
@@ -89,6 +89,7 @@ public class Target : MonoBehaviour
             gameController.UpdateScore(scoreItemEasy);
             Instantiate(destroyParticle, transform.position, Quaternion.identity);
             Destroy(gameObject);
+
         }
 
     }

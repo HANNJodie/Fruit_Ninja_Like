@@ -16,6 +16,10 @@ public class Difficulty_controller : MonoBehaviour
     public int _DificultyMalusValue;
     public int DificulyValue;
 
+    public AudioSource _backgroundMusic; 
+    public AudioClip _MusicIngame;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +33,10 @@ public class Difficulty_controller : MonoBehaviour
         Debug.Log(gameObject.name + "was clicked");
         gameController.SpawnRate = _DificultySpawnRate;
         gameController.StartCoroutine("SpawnTarget");
+        //ici changer la musique pour la musique ingame
+        _backgroundMusic.clip = _MusicIngame;
+        _backgroundMusic.Play();
+
 
         //Xiao Xiao HUD
 
