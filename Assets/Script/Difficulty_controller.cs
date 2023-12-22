@@ -35,7 +35,7 @@ public class Difficulty_controller : MonoBehaviour
         gameController.StartCoroutine("SpawnTarget");
         //ici changer la musique pour la musique ingame
         _backgroundMusic.clip = _MusicIngame;
-        _backgroundMusic.Play();
+                _backgroundMusic.Play();
 
 
         //Xiao Xiao HUD
